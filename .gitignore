@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+#Nextst.js
+.next/
+
+# Build outputs
+dist/
+build/
+
+# Ambiente
+.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistemas
+.DS_Store
+Thumbs.db
