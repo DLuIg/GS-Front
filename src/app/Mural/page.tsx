@@ -12,11 +12,11 @@ import { API_BASE_URL, getHeaders } from '../services/api';
 import CompReportarAlerta from '../components/CompReportarAlerta/CompReportarAlerta';
 import ModalMessage from '../components/ModalMessage/ModalMessage';
 
-// <-- CORREÇÃO 2: Garantir que o tipo de onConfirm está correto.
+
 type ModalContentState = {
   title: string;
   message: string;
-  onConfirm?: (inputValue: string) => void; // Precisa aceitar uma string
+  onConfirm?: (inputValue: string) => void; 
   confirmText?: string;
   cancelText: string;
   icon?: 'alert' | 'delete' | 'edit';

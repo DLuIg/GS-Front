@@ -16,7 +16,3 @@ export const getHeaders = (): Record<string, string> => {
   };
 };
 
-// A constante isBrowser não é mais necessária para definir API_BASE
-// Se você usava 'isBrowser' para outras coisas neste arquivo, pode mantê-la:
-// const isBrowser = typeof window !== "undefined";
-// Caso contrário, pode ser removida se só servia para o condicional da URL.
