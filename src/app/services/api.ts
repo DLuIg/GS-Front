@@ -1,12 +1,12 @@
 // services/api.ts
 
 // A API está rodando apenas localmente por enquanto
-export const API_BASE_URL = "http://localhost:8080";
+const isBrowser = typeof window !== "undefined";
 
-// Sua x-api-key para web (ex: 1234, conforme suas properties Java)
-// Se você configurou no .env.local como NEXT_PUBLIC_X_API_KEY:
-// const X_API_KEY_WEB = process.env.NEXT_PUBLIC_X_API_KEY || "SUA_CHAVE_API_PADRAO_SE_NAO_DEFINIDA";
-// Ou se for fixa por enquanto:
+export const API_BASE = isBrowser
+    ? "https://quarkus-gs-production.up.railway.app" // <-- Adicionado HTTPS aqui
+    : "http://localhost:8080"; // Mantero localhost para desenvolvimento
+
 const X_API_KEY_WEB = "1234"; // Certifique-se que esta é a chave que seu backend espera
 
 export const getHeaders = (): Record<string, string> => {
