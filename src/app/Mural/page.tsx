@@ -11,6 +11,7 @@ import { CardData } from '../types/typesAndInterfaces';
 import { API_BASE_URL, getHeaders } from '../services/api';
 import CompReportarAlerta from '../components/CompReportarAlerta/CompReportarAlerta';
 import ModalMessage from '../components/ModalMessage/ModalMessage';
+import Link from 'next/link';
 
 
 type ModalContentState = {
@@ -259,6 +260,13 @@ export default function MuralPage() {
         { /* ... O resto do seu JSX ... */ }
         <div className="container mx-auto max-w-4xl">
            <CompCabecalhoMural user={user ?? undefined} handleLogout={handleLogout} />
+           <div className="flex justify-center my-6">
+            <Link 
+              href="/Integrantes"
+              className="bg-orange-500 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-orange-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75">
+              Conhecer a Equipe
+            </Link>
+          </div>
            <CompReportarAlerta user={user} onReportSuccess={fetchCards} />
  
            {isLoadingCards ? (
