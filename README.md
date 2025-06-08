@@ -82,7 +82,14 @@ Atenção: As funcionalidades de **deletar e editar mensagens** podem não respo
      [https://github.com/DLuIg/GS-Front](https://github.com/DLuIg/GS-Front)
 ```
 
+## 💬 Link do Deploy na Vercel
 
+``` bash
+(https://gs-front-git-main-dluigs-projects.vercel.app)
+```
+## 📷​ Vídeo de apresentação do projeto
+
+https://youtu.be/MjyO3Cm8gbM
 
 
 
