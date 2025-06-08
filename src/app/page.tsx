@@ -174,12 +174,7 @@ const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
                   </label>
                 </div>
 
-                <a
-                  href="#" // Defina um link para recuperação de senha se tiver
-                  className="font-medium text-blue-600 hover:text-blue-500 hover:underline"
-                >
-                  Esqueceu a senha?
-                </a>
+                
               </div>
 
               <div>
